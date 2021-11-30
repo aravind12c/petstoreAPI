@@ -26,7 +26,14 @@ docker run  --name swaggerapi-petstore3 -d -p 8080:8080 swaggerapi/petstore3:uns
 mvn package jetty:run
 ```
     
-## Steps 
+## Steps to run
 - In command prompt use mvn clean install or in Run configuarions run as Maven clean install.
+
+## Approach
+Below are the points considered while creating the framework
+- Project - Maven Project
+- Design pattern - Page object model
+- Framework - Cucumber(For Test approach), Rest Assured(For API Automation), Extent(For Report)
+- Language - Java
 
 The test cases are designed in such a way that, for every action like Post/Put/Delete, I am trying to get the specific ID to validate whether the changes are updated or not.
