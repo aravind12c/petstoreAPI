@@ -1,4 +1,4 @@
-# zooplusAPIRepo
+# Petstore API
 Small POC for API
 
 ## Techs Used
