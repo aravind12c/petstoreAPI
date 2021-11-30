@@ -15,10 +15,12 @@ Java, Cucumber, Rest Assured, Extent
 ## Setup Petstore Environment
 - Use git clone https://github.com/swagger-api/swagger-petstore.git or download the project and extract it
 - If you have docker, then start the docker engine and use below commands
-    cd <project location>
-    docker build -t swaggerapi/petstore3:unstable .
-    docker pull swaggerapi/petstore3:unstable
-    docker run  --name swaggerapi-petstore3 -d -p 8080:8080 swaggerapi/petstore3:unstable
+'''
+cd <project location>
+docker build -t swaggerapi/petstore3:unstable .
+docker pull swaggerapi/petstore3:unstable
+docker run  --name swaggerapi-petstore3 -d -p 8080:8080 swaggerapi/petstore3:unstable
+    '''
 - If you don't have docker, then import the project in any ide and wait for all the Jars to be downloaded then use below command or in run configuartion
     mvn package jetty:run
   
