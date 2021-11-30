@@ -23,19 +23,10 @@ docker run  --name swaggerapi-petstore3 -d -p 8080:8080 swaggerapi/petstore3:uns
 ```
 - If you don't have docker, then import the project in any ide and wait for all the Jars to be downloaded then use below command or in run configuartion
 ```
-    mvn package jetty:run
+mvn package jetty:run
 ```
     
-## Steps
-- Download and Extract this project to your local 
-- In command prompt use mvn clean install
+## Steps 
+- In command prompt use mvn clean install or in Run configuarions run as Maven clean install.
 
-
-The test cases are designed in such a way that, for every action like Post/Put/Delete, I am trying to get the specific ID to validate whether the changes are updated or not. The API provided to me is taking time to update/to synchronize due to which there are chances of few test cases may fail.
-Note: This can be handled by adding wait time for each case solution provided below.
-
-**Solution:**
-Below are the ways to handle the above situations:
-- Use ResponseSpecBuilder class to simulate the request/response time.
-- Use Sleep to manage static wait.
-- Set a condition to validate the response and wait till we receive a response by polling for some period of time.
+The test cases are designed in such a way that, for every action like Post/Put/Delete, I am trying to get the specific ID to validate whether the changes are updated or not.
